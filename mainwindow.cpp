@@ -126,9 +126,10 @@ void MainWindow::drawPts(QVector<double> x_pts, QVector<double> y_pts)
   ui->customplot->yAxis->setTickLabelFont(serifFont);
 
   ui->customplot->xAxis->setLabelFont(serifFont);
-  ui->customplot->axisRect()->setupFullAxesBox();
+  ui->customplot->axisRect()->setupFullAxesBox(true);
   ui->customplot->yAxis->setLabelFont(serifFont);
 
   ui->customplot->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom);
+//  ui->customplot->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom | QCP::iSelectPlottables);
   ui->customplot->replot();
 }
