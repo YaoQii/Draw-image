@@ -19,7 +19,6 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     qcustomplot.h \
     vector2d.h \
-    small_linalg.h \
     curve_3.h \
     helper.h
 

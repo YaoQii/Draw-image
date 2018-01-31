@@ -2,8 +2,6 @@
 #define CURVE_3_H
 #include "helper.h"
 #include "vector2d.h"
-#include "small_linalg.h"
-//#include "constants.h"
 #include <QPointF>
 namespace mathself {
 typedef enum {Calcurvature, Calheading, Calsteer} CalType;
