@@ -9,6 +9,10 @@ MainWindow::MainWindow(QWidget *parent) :
   ui(new Ui::MainWindow)
 {
   ui->setupUi(this);
+
+  QDesktopWidget *desktop = QApplication::desktop(); // =qApp->desktop();也可以
+//  setGeometry(deskWgt->width()/2-640, deskWgt->height()/2 - 240, 645, 472);
+  move((desktop->width() - this->width())/4, (desktop->height() - this->height())/2);
   //  setupPlot();
 }
 
